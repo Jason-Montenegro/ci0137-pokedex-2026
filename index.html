@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex - Lista de Pokemon</title>
+  <link rel="icon" type="image/svg+xml" href="./../favicon.ico">
+</head>
+<body>
+  <header>
+    <div style="display:flex; flex-direction:row;">
+      <img src="./../favicon.ico" alt="Logo de pokebola" width="100px"/>
+      <p>Pokedex</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="pokedex.html">Pokedex</a></li>
+        <li><a href="trainer.html">Perfil de entrenador</a></li>
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="settings.html">Configuracion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p><h2>Lista de Pokemon</h2></p>
+    <article>
+      <h3>Buscar y filtrar</h3>
+      <form action="/search-pokemon" method="POST">
+        <label for="input__name">Nombre</label>
+        <input type="text" name="name" id="input__name"/>
+        <label for="select__pokemon-type">Tipo</label>
+        <select name="pokemon-type" id="select__pokemon-type">
+          <option value=""></option>
+        </select>
+        <label for="select__pokemon-order">Ordenar por</label>
+        <select name="pokemon-order" id="select__pokemon-order">
+          <option value=""></option>
+        </select>
+        <button type="submit">Buscar</button>
+      </form>
+    </article>
+    <article>
+      <h3>Pokemon disponibles</h3>
+      <section id="grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; ">
+        <div class="modal">
+          <img width="100" height="100" src="./assets/bulbasaur-grande.png" alt="Bulbasaur" />
+          <h3>#001</h3>
+          <p>Bulbasaur es un Pokémon de tipo planta.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/ivysaur-grande.png" alt="Ivysaur" />
+          <h3>#002</h3>
+          <p>Ivysaur es un Pokémon de tipo planta.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/venusaur-grande.png" alt="Venusaur" />
+          <h3>#003</h3>
+          <p>Venusaur es un Pokémon de tipo planta.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/charmander-grande.png" alt="Charmander" />
+          <h3>#004</h3>
+          <p>Charmander es un Pokémon de tipo fuego.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/charmeleon-grande.png" alt="Charmeleon" />
+          <h3>#005</h3>
+          <p>Charmeleon es un Pokémon de tipo fuego.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/charizard-grande.png" alt="Charizard" />
+          <h3>#006</h3>
+          <p>Charizard es un Pokémon de tipo fuego y volador.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/squirtle-grande.png" alt="Squirtle" />
+          <h3>#007</h3>
+          <p>Squirtle es un Pokémon de tipo agua.</p>
+        </div>
+        <div class="modal">
+          <img width="100" height="100" src="./assets/wartortle-grande.png" alt="Wartortle" />
+          <h3>#008</h3>
+          <p>Wartortle es un Pokémon de tipo agua.</p>
+        </div>
+      </section>
+      <div >
+        <ul>
+          <li><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>
+      <small>Proyecto academico del curso de Desarrollo de Aplicaciones Web
+      <abbr title="Universidad de Costa Rica">UCR</abbr>
+      <time datetime="2026">2026</time>
+      </small>
+    </p>
+    <p>Pendiente</p>
+  </footer>
+</body>
+</html>
